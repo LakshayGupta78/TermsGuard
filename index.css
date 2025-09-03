@@ -1,0 +1,288 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  all: unset;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  background-color: white;
+  font-weight: 600;
+  letter-spacing: 0.007em;
+  line-height: 1.1428571429;
+}
+#nav-elements {
+  display: flex;
+  backdrop-filter: blur(50px);
+  justify-content: center;
+  gap: 60px;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  z-index: 9999;
+  height: 50px;
+}
+#nav-elements a {
+  all: unset;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgba(0, 0, 0, 0.5);
+}
+#shield-logo {
+  width: 30px;
+  height: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  filter: opacity(50%) invert();
+}
+#front-page {
+  width: 100%;
+  background: linear-gradient(rgba(0, 102, 204, 0.552),white);
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#logo-video {
+  width: 300px;
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+  filter: invert() hue-rotate(180deg);
+}
+#logo-video-text {
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+  transform: scale(140%);
+  color: black;
+}
+#logo-video-body-text {
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 25px;
+}
+#logo-video-body-text-span{
+  color: rgba(0, 0, 0, 0.468);
+}
+#get-started {
+  all: unset;
+  color: rgb(0, 102, 204);
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+#nav-elements a:hover,
+#get-started:hover {
+  text-decoration: underline;
+}
+#middle-text {
+  text-align: center;
+  margin-top: 120px;
+  font-size: 180%;
+  padding-bottom: 30px;
+  scroll-margin-top: 90px;
+}
+#mtext {
+  margin: 0%;
+}
+#blue-m-text {
+  color: rgb(0, 102, 204);
+  text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.07em;
+}
+#what-we-do {
+  color: rgba(0, 0, 0, 0.554);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+#cards {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+#individual-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  padding: 6px;
+  width: 30%;
+  border-radius: 10px;
+  background-color: rgb(239, 239, 239);
+  transition: 0.2s all;
+  cursor: pointer;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: scroll;
+}
+#individual-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(59, 59, 255, 0.17);
+}
+#card-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#card-text {
+  color: rgba(0, 0, 0, 0.438);
+  margin: 0%;
+  max-width: 80%;
+  margin: 0px auto;
+}
+#inner-card-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#file-drop {
+  margin-top: 150px;
+  margin-bottom: 70px;
+  border: dashed rgba(0, 0, 0, 0.265) 2px;
+  width: 40%;
+  height: 300px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(239, 239, 239);
+  text-align: center;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  scroll-margin-top: 190px;
+}
+#file-drop-inner-container {
+  display: block;
+}
+#file-drop:hover {
+  border: dashed rgb(35, 81, 222) 1px;
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(59, 59, 255, 0.17);
+}
+#upload-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#upload-body-text {
+  color: rgba(0, 0, 0, 0.432);
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#upload-document-text {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#upload-item-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  overflow: hidden;
+}
+#upload-items {
+  border-radius: 30px;
+  background-color: #edf3f9;
+  padding: 10px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.432);
+}
+#how-text {
+  scroll-margin-top: 60px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.537);
+  margin-top: 150px;
+  margin-bottom: 40px;
+}
+#how-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(59, 59, 255, 0.17);
+}
+#TGLogo {
+  color: black;
+}
+#why-cards {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+#why-individual-card {
+  background-color: rgb(239, 239, 239);
+  padding-bottom: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.205);
+  border-radius: 10px;
+  flex: 0 0 45%;
+  height: 160px;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
+#why-individual-card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 15px rgba(59, 59, 255, 0.17);
+}
+#footer {
+  background:linear-gradient(white,rgba(0, 102, 204, 0.552));
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+  bottom: 0%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+#footer-logo_text {
+  display: flex;
+  justify-content: center;
+}
+#footer-logo {
+  width: 40px;
+  height: 40px;
+}
+#footer-name {
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgb(0, 102, 204);
+}
+#footer-main-text {
+  color: rgba(0, 0, 0, 0.453);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#three_points_container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: rgba(0, 0, 0, 0.453);
+}
+#copyright {
+  color: rgba(0, 0, 0, 0.453);
+  width: 60%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 13px;
+}
